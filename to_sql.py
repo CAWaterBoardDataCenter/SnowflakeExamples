@@ -9,10 +9,10 @@ def create_connection(snowflake_database,snowflake_schema):
     # Establish the connection to Snowflake
     url = snowflake.sqlalchemy.URL(
         user='<YOUR.EMAIL>@waterboards.ca.gov', # NOTE Replace this with your email
-        account='<SNOWFLAKE.WEB.ENDPOINT',      # NOTE Contact your program DBA for help setting this up
+        account='<SNOWFLAKE.WEB.ENDPOINT>',      # NOTE Contact your program DBA for help setting this up
         authenticator='externalbrowser',
         warehouse='<YOUR_WAREHOUSE>',           # NOTE Contact your program DBA for help setting this up
-        role = 'YOUR_SNOWFLAKE_ROLE',           # NOTE Contact your program DBA for help setting this up. You'll need to request read/write permissions to run this code.
+        role = '<YOUR_SNOWFLAKE_ROLE>',           # NOTE Contact your program DBA for help setting this up. You'll need to request read/write permissions to run this code.
         database=snowflake_database,
         schema=snowflake_schema
         )
